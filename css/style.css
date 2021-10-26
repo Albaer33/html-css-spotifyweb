@@ -6,6 +6,36 @@
 /* COMMON */
 body {
     font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+/* UPGRADE PART */
+.upgrade {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    background-color: rgba(0,0,0,0.4);
+}
+.btn-up {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+.btn-up:hover {
+    transform: scale(1.1);
+}
+.btn-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
 /* MAIN */
 main {
@@ -17,20 +47,39 @@ main {
     float: left;
     width: 20%;
     height: 100%;
-    background-color: lightcoral;
+    background-color: #000000;
 }
 .main-content {
     overflow: hidden;
     float: left;
     width: 80%;
     height: 100%;
-
-    background-color: lightgrey;
+    padding-top: 120px;
+    background-color: #141922;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.btn-menu {
+    color: #6f7177;
+    text-decoration: none;
+    font-weight: 900;
+}
+.btn-menu:hover::after {
+    content: "";
+    display: block;
+    width: 40px;
+    margin: auto;
+    height: 3px;
+    background-color: #adff2f;
 }
 /* FOOTER */
 footer {
     overflow: hidden;
     width: 100%;
     height: 100px;
-    background-color: pink;
+    background-color: #282828;
 }
