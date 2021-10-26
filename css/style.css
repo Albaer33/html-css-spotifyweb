@@ -8,8 +8,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+img {
+    width: 100%;
+}
 ul {
     list-style-type: none;
+}
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
 }
 /* UPGRADE PART */
 .upgrade {
@@ -17,7 +25,7 @@ ul {
     position: fixed;
     top: 0;
     right: 0;
-    width: 80%;
+    width: calc(100% - 250px);
     background-color: rgba(0,0,0,0.4);
 }
 .btn-up {
@@ -45,23 +53,26 @@ main {
 .main-nav {
     overflow: hidden;
     float: left;
-    width: 20%;
+    width: 250px;
     height: 100%;
     background-color: #000000;
 }
 .main-content {
     overflow: hidden;
     float: left;
-    width: 80%;
+    width: calc(100% - 250px);
     height: 100%;
     padding-top: 120px;
     background-color: #141922;
 }
+.menu {
+    height: 50px;
+}
 .menu ul {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
+    justify-content: space-around;
+    width: 800px;
+    margin: 0 auto;
 }
 .btn-menu {
     color: #6f7177;
@@ -72,9 +83,20 @@ main {
     content: "";
     display: block;
     width: 40px;
-    margin: auto;
     height: 3px;
+    margin: 5px auto;
     background-color: #adff2f;
+}
+/* recently played part */
+.album-container {
+    display: flex;
+    margin: 30px 0;
+}
+.single-album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 6);
 }
 /* FOOTER */
 footer {
