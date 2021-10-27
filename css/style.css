@@ -19,13 +19,20 @@ ul {
     margin: auto;
     padding: 20px 0;
 }
+h5 {
+    padding: 4px 0;
+    color: #6f7177;
+}
+h4 {
+    padding: 4px 0;
+}
 /* UPGRADE PART */
 .upgrade {
     height: 100px;
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 250px);
+    width: calc(100% - 220px);
     background-color: rgba(0,0,0,0.4);
 }
 .btn-up {
@@ -53,14 +60,14 @@ main {
 .main-nav {
     overflow: hidden;
     float: left;
-    width: 250px;
+    width: 220px;
     height: 100%;
     background-color: #000000;
 }
 .main-content {
-    overflow: hidden;
+    overflow-y: auto;
     float: left;
-    width: calc(100% - 250px);
+    width: calc(100% - 220px);
     height: 100%;
     padding-top: 120px;
     background-color: #141922;
@@ -87,16 +94,21 @@ main {
     margin: 5px auto;
     background-color: #adff2f;
 }
-/* recently played part */
+/* content album part */
 .album-container {
     display: flex;
+    justify-content: flex-start;
     margin: 30px 0;
 }
 .single-album {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 6);
+    width: calc(90% / 6);
+    margin-right: 15px;
+}
+.single-album:hover {
+    
 }
 /* FOOTER */
 footer {
