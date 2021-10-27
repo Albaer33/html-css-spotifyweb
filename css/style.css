@@ -216,6 +216,7 @@ footer {
     align-items: center;
     margin: 0 20px;
 }
+/* footer left */
 .song-img {
     margin-right: 20px;
     height: 80px;
@@ -229,3 +230,26 @@ footer {
 .fa-heart {
     margin-right: 5px;
 }
+/* footer middle */
+.media-action {
+    display: flex;
+}
+.media-btn {
+    font-size: 18px;
+    padding: 0 20px;
+}
+.song-progress {
+    display: flex;
+    flex-direction: column;
+}
+.progress-bar{
+    width: 500px;
+    height: 3px;
+    background-color: #6f7177;
+}
+.bar-spent {
+    width: 20%;
+    height: 3px;
+    background-color: white;
+}
+/* footer right */
