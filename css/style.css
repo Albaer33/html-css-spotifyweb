@@ -225,59 +225,58 @@ footer {
 }
 .media-wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 100%;
-    flex-shrink: 1;
 }
 .footer-box {
+    width: 250px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 20px;
 }
 /* footer left */
 .song-img {
-    margin-right: 20px;
     height: 80px;
     width: 80px;
 }
 .saving-option {
     color: #6f7177;
     font-size: 20px;
-    margin-left: 20px;
-}
-.fa-heart {
-    margin-right: 5px;
 }
 /* footer middle */
+.media-section {
+    width: 350px;
+}
 .media-action {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 10px 0;
 }
 .media-btn {
     font-size: 18px;
-    padding: 0 20px;
 }
 .song-progress {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 12px;
 }
 .progress-bar {
-    width: 400px;
-    margin: 0 30px;
+    width: 80%;
 }
 .bar-spent {
     width: 20%;
     background-color: white;
 }
 /* footer right */
-.right-btn {
-    margin: 0 10px;
+.right-box {
+    width: 150px;
+    flex-shrink: 0;
 }
 .volume-bar {
-    width: 120px;
+    width: 50%;
 }
 
