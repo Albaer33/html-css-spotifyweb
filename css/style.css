@@ -39,6 +39,7 @@ h4 {
     right: 0;
     width: calc(100% - 220px);
     background-color: rgba(0,0,0,0.4);
+    z-index: 1;
 }
 .btn-up {
     display: inline-block;
@@ -141,13 +142,17 @@ main {
     background-color: #141922;
 }
 .menu {
-    height: 50px;
+    margin: 0 25px;
+    height: 150px;
 }
 .menu ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 800px;
     margin: 0 auto;
+}
+.menu ul li {
+    margin: 15px;
 }
 .btn-menu {
     color: #6f7177;
@@ -175,6 +180,19 @@ main {
     width: calc(90% / 6);
     margin-right: 15px;
 }
+@media screen and (max-width: 1100px) {
+    .album-container {
+        flex-wrap: wrap;
+    }
+    .single-album {
+        width: calc(90% / 4);
+    }
+}
+@media screen and (max-width: 700px) {
+    .single-album {
+        width: calc(90% / 2);
+    }
+}
 .img-container {
     position: relative;
 }
@@ -201,6 +219,7 @@ main {
 /* FOOTER */
 footer {
     position: fixed;
+    z-index: 2;
     bottom: 0;
     left: 0;
     width: 100%;
