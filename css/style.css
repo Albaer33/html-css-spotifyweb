@@ -63,27 +63,7 @@ main {
     width: 100%;
     height: calc(100vh - 100px);
 }
-/* MOBILE MAIN MEDIA QUERY */
-@media screen and (max-width: 600px) {
-    .playlist {
-        display: none;
-    }
-    .word {
-        display: none;
-    }
-    .logo-big {
-        display: none;
-    }
-    .logo-small {
-        display: block;
-    }
-    .main-content {
-        width: calc(100% - 50px);
-    }
-    .main-aside {
-        width: 50px;
-    }
-}
+
 /* main nav part */
 .main-aside {
     color: #717171;
@@ -324,3 +304,24 @@ footer {
     width: 50%;
 }
 
+/* MOBILE MAIN MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    .playlist {
+        display: none;
+    }
+    .word {
+        display: none;
+    }
+    .logo-big {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+    }
+    .main-content, .upgrade {
+        width: calc(100% - 40px);
+    }
+    .main-aside {
+        width: 40px;
+    }
+}
