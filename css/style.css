@@ -75,7 +75,7 @@ main {
         display: none;
     }
     .logo-small {
-        display: inline-block;
+        display: block;
     }
     .main-content {
         width: calc(100% - 50px);
