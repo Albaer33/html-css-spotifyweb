@@ -47,7 +47,7 @@ h4 {
     color: white;
     border: 1px solid white;
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 8px 16px;
 }
 .btn-up:hover {
     transform: scale(1.1);
@@ -63,6 +63,27 @@ main {
     width: 100%;
     height: calc(100vh - 100px);
 }
+/* MOBILE MAIN MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    .playlist {
+        display: none;
+    }
+    .word {
+        display: none;
+    }
+    .logo-big {
+        display: none;
+    }
+    .logo-small {
+        display: inline-block;
+    }
+    .main-content {
+        width: calc(100% - 50px);
+    }
+    .main-aside {
+        width: 50px;
+    }
+}
 /* main nav part */
 .main-aside {
     color: #717171;
@@ -72,15 +93,19 @@ main {
     width: 220px;
     height: 100%;
     min-height: 200px;
-    padding: 10px 20px;
+    padding: 8px;
     background-color: #000000;
 }
 .logo {
     height: 100px;
 }
+.logo-small {
+    display: none;
+}
 .main-nav {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: calc(100% - 100px);
 }
 .main-nav a {
@@ -89,35 +114,36 @@ main {
 }
 /* style for nav sections */
 .general {
-    height: 100px;
-}
-.general div {
-    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
 }
 .general .fas{
     font-size: 24px;
     padding-right: 5px;
 }
-
 .playlist {
     overflow: hidden;
     height: 100%;
-    padding: 20px 0;
+}
+.playlist ul {
+    height: 70%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
 }
 .fa-plus-square {
     font-size: 40px;
     vertical-align: middle;
 }
-.playlist ul {
-    height: 70%;
-    overflow-y: auto;
-}
-.playlist ul li {
-    padding: 5px 0;
-}
-
-.bottom-nav{
-    height: 50px;
+.bottom-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
 }
 .line {
     background-color: #717171;
@@ -126,9 +152,8 @@ main {
 }
 .user {
     font-size: 22px;
-    padding-top: 8px;
 }
-.fa-user {
+.fa-user, .fa-download {
     padding-right: 5px;
 }
 /* main content part */
